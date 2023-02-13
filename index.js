@@ -27,19 +27,16 @@ for (const bot of bots) {
 let happened = false;
 
 let currentMode = 0;
-let modes = [
+let modes = [/*
     ['circle',      10000],
-    /*
     ['circle2',     10000],
-    ['dvd',         5000],
+    ['dvd',         5000],*/
     ['sine',        5000],
-    ['fullsine',    5000],
+    ['fullsine',    5000],/*
     ['figure8',     15000],
     ['cosmic',      15000],
     ['heart',       15000],
-    
-    ['line',        10000]
-    
+    ['line',        10000],
     ['line2',       10000],
     ['circle3',     10000],
     ['circle4',     10000],
@@ -162,6 +159,21 @@ let files = [
 	// './Sonic1_-_Green_Hill_Zone.mid',
 	// './china.mid',
 	// './Slider.mid',
-	'./[Black Score] One Last Time ~ Z-Doc R..mid'
+	'./Sonic1_-_Green_Hill_Zone.mid'
 ];
 // let file = './[Black Score] One Last Time ~ Z-Doc R..mid'
+/*
+// if (!true) {
+    setTimeout(() => {
+        player.loadFile(files[currentFile]);
+    }, 3000);
+// }
+
+player.player.on('endOfFile', () => {
+	player.player.stop();
+	currentFile++;
+    setTimeout(() => {
+        player.loadFile(files[currentFile]);
+    }, 3000);
+});
+*/
